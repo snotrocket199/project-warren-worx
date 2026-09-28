@@ -95,13 +95,22 @@ p {
   gap: 12px;
   font-weight: 800;
   color: var(--text);
+  line-height: 1;
+  flex-shrink: 0;
 }
 
-.brand-logo {
+.brand-logo-img {
   width: 60px;
   height: 60px;
-  object-fit: cover;
-  border-radius: 14px;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  border: none;
+  flex-shrink: 0;
+}
+
+.brand-mark {
+  display: none;
 }
 
 .main-nav {
