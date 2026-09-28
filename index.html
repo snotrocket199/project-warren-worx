@@ -4,21 +4,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Warren Worx auto repair and maintenance services." />
   <title>Warren Worx | Auto Repair</title>
-  <meta name="description" content="Warren Worx provides quality automotive repair, diagnostics, brake service, oil changes, and vehicle maintenance." />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <div class="brand">
+      <a href="#top" class="brand" aria-label="Warren Worx home">
         <img src="resources/logo.jpg" alt="Warren Worx logo" class="brand-logo" />
         <span>Warren Worx</span>
-      </div>
+      </a>
 
       <nav class="main-nav" aria-label="Main navigation">
         <a href="#about">About</a>
@@ -28,83 +25,78 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <a class="nav-cta" href="#schedule">Book Now</a>
+      <a class="nav-button" href="#schedule">Book Now</a>
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Trusted Auto Repair & Service</p>
-          <h1>Your One Stop Solution for Professional Auto Repair</h1>
+          <p class="eyebrow">Trusted Auto Repair</p>
+          <h1>Your one stop shop for reliable car care.</h1>
           <p class="lead">
-            From diagnostics and brake service to routine maintenance, Warren Worx keeps
-            your vehicle running strong, safely, and efficiently.
+            Warren Worx helps drivers stay safe on the road with honest service,
+            quick turnaround times, and expert auto repairs you can trust.
           </p>
+
           <div class="hero-actions">
             <a class="primary-btn" href="#schedule">Schedule Service</a>
-            <a class="secondary-btn" href="#services">View Services</a>
-            <a class="contact-btn" href="tel:+15551234567">Contact Us</a>
+            <a class="secondary-btn" href="#services">Our Services</a>
+            <a class="contact-btn" href="tel:+15551234567">Call Now</a>
           </div>
-          <ul class="hero-trust">
-            <li>Same-day service</li>
+
+          <ul class="trust-list" aria-label="Business highlights">
+            <li>Fast diagnostics</li>
             <li>Honest pricing</li>
-            <li>Certified technicians</li>
+            <li>Friendly support</li>
           </ul>
         </div>
 
         <div class="hero-visual">
-          <div class="hero-card hero-card-top">
-            <span>4.9/5</span>
-            <small>Customer Rating</small>
-          </div>
-          <div class="hero-card hero-card-bottom">
-            <span>Open Daily</span>
-            <small>Mon-Fri</small>
-          </div>
-          <div class="visual-fallback" aria-label="Auto repair service illustration">
-            <div class="visual-badge">Warren Worx</div>
-          </div>
+          <div class="hero-badge top">4.9/5 Reviews</div>
+          <div class="hero-badge bottom">Open Daily</div>
+          <img src="resources/head.jpg" alt="Auto mechanic working on a vehicle" class="hero-image" />
         </div>
       </div>
     </section>
 
-    <section class="about section" id="about">
+    <section class="section about" id="about">
       <div class="container about-grid">
         <div class="about-image-wrap">
-          <div class="about-visual" aria-label="Repair shop placeholder">
-            <span>Quality Service</span>
-          </div>
+          <img src="resources/welding.jpg" alt="Welding and auto repair service" class="about-image" />
         </div>
 
         <div class="about-copy">
           <p class="section-tag">About Us</p>
-          <h2>Reliable repair, honest service, and long-term value.</h2>
+          <h2>Dependable repair. Practical solutions. Real customer care.</h2>
           <p>
-            Warren Worx is your local automotive partner for quality repairs, routine
-            maintenance, and dependable service. We combine modern equipment with a
-            customer-first approach to keep your vehicle safe and road-ready.
+            At Warren Worx, we believe quality auto service should be straightforward,
+            professional, and stress-free. Whether you need routine maintenance or a
+            full repair, we work hard to keep your vehicle running strong and safe.
           </p>
-          <div class="about-points">
-            <div>
+
+          <div class="feature-list">
+            <div class="feature-item">
               <strong>Modern Diagnostics</strong>
-              <span>Advanced tools for accurate troubleshooting.</span>
+              <span>Accurate troubleshooting with up-to-date equipment.</span>
             </div>
-            <div>
+
+            <div class="feature-item">
               <strong>Skilled Team</strong>
-              <span>Experienced specialists you can trust.</span>
+              <span>Experienced mechanics you can trust with your vehicle.</span>
             </div>
-            <div>
-              <strong>Transparent Care</strong>
-              <span>Clear communication and fair pricing.</span>
+
+            <div class="feature-item">
+              <strong>Transparent Service</strong>
+              <span>Clear communication and fair pricing from start to finish.</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="services section" id="services">
+    <section class="section services" id="services">
       <div class="container">
         <div class="section-heading">
           <p class="section-tag">Our Services</p>
@@ -114,82 +106,85 @@
         <div class="services-grid">
           <article class="service-card">
             <div class="service-icon">⚙️</div>
-            <h3>Engine Diagnostics & Repair</h3>
-            <p>Find the issue fast and fix it right the first time.</p>
+            <h3>Engine Diagnostics</h3>
+            <p>Find the issue quickly and fix it right the first time.</p>
           </article>
 
           <article class="service-card">
             <div class="service-icon">🛑</div>
-            <h3>Brake Inspection & Replacement</h3>
-            <p>Keep your stopping power safe and responsive.</p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">🔩</div>
-            <h3>Suspension & Steering</h3>
-            <p>Improve comfort, control, and tire wear.</p>
+            <h3>Brake Service</h3>
+            <p>Keep your stopping power reliable, safe, and responsive.</p>
           </article>
 
           <article class="service-card">
             <div class="service-icon">🛢️</div>
-            <h3>Oil Change & Preventive Maintenance</h3>
-            <p>Protect your engine with smart seasonal care.</p>
+            <h3>Oil Change</h3>
+            <p>Protect your engine with routine maintenance that lasts.</p>
           </article>
 
           <article class="service-card">
             <div class="service-icon">🔧</div>
-            <h3>Transmission Services</h3>
-            <p>Keep shifting smooth and performance consistent.</p>
+            <h3>Suspension Repair</h3>
+            <p>Improve handling, comfort, and tire wear on every drive.</p>
           </article>
 
           <article class="service-card">
             <div class="service-icon">🚗</div>
-            <h3>General Auto Mechanical Repairs</h3>
-            <p>Complete repairs for the problems that matter most.</p>
+            <h3>General Repairs</h3>
+            <p>Dependable fixes for the problems you notice most often.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">✅</div>
+            <h3>Preventive Care</h3>
+            <p>Catch small problems early before they become expensive.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="warranty section alt-section">
+    <section class="section warranty">
       <div class="container">
         <div class="section-heading narrow">
-          <p class="section-tag">Our Warranty Promise</p>
+          <p class="section-tag">Why Choose Us</p>
           <h2>We stand behind every repair.</h2>
         </div>
 
         <div class="warranty-grid">
           <div class="warranty-item">
             <span>✓</span>
-            <h3>Quality Guarantee</h3>
-            <p>All repairs backed by our quality guarantee.</p>
+            <h3>Quality Work</h3>
+            <p>Careful repairs done right the first time.</p>
           </div>
+
           <div class="warranty-item">
             <span>✓</span>
-            <h3>Parts & Labor</h3>
-            <p>Warranty coverage on parts and labor.</p>
+            <h3>Fair Pricing</h3>
+            <p>Clear estimates with no surprises.</p>
           </div>
+
           <div class="warranty-item">
             <span>✓</span>
-            <h3>30-Day Guarantee</h3>
-            <p>We make it right if you are not satisfied.</p>
+            <h3>Fast Turnaround</h3>
+            <p>Efficient service that keeps you moving.</p>
           </div>
+
           <div class="warranty-item">
             <span>✓</span>
-            <h3>Follow-Up Care</h3>
-            <p>Free follow-up inspections after service.</p>
+            <h3>Customer First</h3>
+            <p>Friendly service from start to finish.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="schedule section" id="schedule">
+    <section class="section schedule" id="schedule">
       <div class="container schedule-wrap">
         <div class="schedule-copy">
-          <p class="section-tag">Visit Us</p>
-          <h2>Schedule your next service appointment.</h2>
+          <p class="section-tag">Schedule</p>
+          <h2>Book your next service appointment.</h2>
           <p>
-            To schedule an appointment, please call us at <a href="tel:+15551234567">(555) 123-4567</a>
+            Need help with maintenance or a repair? Call <a href="tel:+15551234567">(555) 123-4567</a>
             or email <a href="mailto:hello@warrenworx.com">hello@warrenworx.com</a>.
           </p>
         </div>
@@ -197,7 +192,7 @@
         <div class="schedule-card">
           <h3>Business Hours</h3>
           <ul>
-            <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+            <li>Mon - Fri: 8:00 AM - 6:00 PM</li>
             <li>Saturday: 8:00 AM - 3:00 PM</li>
             <li>Sunday: By Appointment</li>
           </ul>
@@ -206,24 +201,26 @@
       </div>
     </section>
 
-    <section class="reviews section" id="reviews">
+    <section class="section reviews" id="reviews">
       <div class="container">
         <div class="section-heading">
           <p class="section-tag">Reviews</p>
-          <h2>Rated 4.9 out of 5 by happy drivers.</h2>
+          <h2>Drivers keep coming back.</h2>
         </div>
 
         <div class="review-grid">
           <blockquote>
-            “Fast, honest, and extremely professional. They fixed my brakes the same day.”
+            “Fast service, honest pricing, and the crew explained everything clearly.”
             <footer>— Brandon</footer>
           </blockquote>
+
           <blockquote>
-            “Best auto shop in town. The team explained everything clearly and pricing was fair.”
+            “Best local shop for maintenance and repairs. Very professional.”
             <footer>— Doug</footer>
           </blockquote>
+
           <blockquote>
-            “I brought in my SUV for diagnostics and they solved the issue quickly.”
+            “They got my vehicle fixed the same day and made the process easy.”
             <footer>— Jozie</footer>
           </blockquote>
         </div>
@@ -235,7 +232,7 @@
     <div class="container footer-wrap">
       <div>
         <h3>Warren Worx</h3>
-        <p>Dependable automotive service built around trust, transparency, and quality.</p>
+        <p>Reliable automotive repair and maintenance for busy drivers.</p>
       </div>
 
       <div>
@@ -250,6 +247,7 @@
         <p>Sat: 8am - 3pm</p>
       </div>
     </div>
+
     <div class="container copyright">© 2026 Warren Worx. All rights reserved.</div>
   </footer>
 </body>
